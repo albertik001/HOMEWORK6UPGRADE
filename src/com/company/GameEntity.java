@@ -1,10 +1,11 @@
 package com.company;
 
-public class GameEntity {
+public class GameEntity extends Weapon {
     private int health;
     private int damage;
 
-    public GameEntity(int health, int damage) {
+    public GameEntity(String weaponType, String weaponName, int health, int damage) {
+        super(weaponType, weaponName);
         this.health = health;
         this.damage = damage;
     }
